@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="w-75 mx-auto py-3">
+
+        <h2 class="fw-bolder my-4 text-center">Product Managment System with Node JS and MySQL</h2>
+
+        <label class="text-info" for="productNameInput">Product Name :</label>
+        <input type="text" class="form-control mb-3" id="productNameInput">
+        <div class="alert alert-danger" id="alertName">Please enter product name</div>
+
+        <label class="text-info" for="ProductPriceInput">Product Price :</label>
+        <input  type="number" class="form-control mb-3" id="productPriceInput">
+        <div class="alert alert-danger" id="alertPrice">Please enter product price</div>
+
+        <label class="text-info" for="ProductDescInput">Product Description :</label>
+        <textarea type="text" class="form-control mb-3" id="productDescInput"></textarea>
+        <div class="alert alert-danger" id="alertDes">Please enter product description</div>
+
+        <button onclick="addProduct(); " class="btn btn-info" id="add">add Product</button>
+        <button onclick="updateProduct(); " class="btn btn-success" id="update">Update Product</button>
+
+
+        <input onkeyup="searchProduct(this.value)" type="text" class="form-control  w-75 m-auto my-5"  id="search" placeholder="search products .....">
+    </div>
+
+
+    <table class="table w-75 mx-auto my-4">
+        <thead>
+            <th>ProductName</th>
+            <th>ProductPrice</th>
+            <th>ProductDesc</th>
+            <th class="text-warning">Update</th>
+            <th class="text-danger">Delete</th>
+
+        </thead>
+        <tbody id="tableBody">
+         
+        </tbody>
+    </table>
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

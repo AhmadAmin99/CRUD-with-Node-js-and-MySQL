@@ -1,0 +1,17 @@
+body
+{
+    font-family: 'segoe ui light';
+}
+#update{
+    display: none;
+}
+
+#alertName, #alertPrice, #alertDes{
+    display: none;
+}
+
+
+th, label{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
