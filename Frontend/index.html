@@ -8,10 +8,12 @@
 </head>
 
 <body>
-    <div class="w-75 mx-auto py-3">
-
-        <h2 class="fw-bolder my-4 text-center">Product Managment System with Node JS and MySQL</h2>
-
+    <div class="w-75 mx-auto p-5 my-5 productForm">
+        <h1 class="ml6">
+            <span class="text-wrapper">
+              <span class="letters">CRUD System with Node JS and MySQL</span>
+            </span>
+          </h1>
         <label class="text-info" for="productNameInput">Product Name :</label>
         <input type="text" class="form-control mb-3" id="productNameInput">
         <div class="alert alert-danger" id="alertName">Please enter product name</div>
@@ -26,17 +28,19 @@
 
         <button onclick="addProduct(); " class="btn btn-info" id="add">add Product</button>
         <button onclick="updateProduct(); " class="btn btn-success" id="update">Update Product</button>
+        <div class="searchInput my-3">
+            <input onkeyup="searchProduct(this.value)" type="text" class="form-control  w-75 m-auto my-5"  id="search" placeholder="search products .....">
 
+        </div>
 
-        <input onkeyup="searchProduct(this.value)" type="text" class="form-control  w-75 m-auto my-5"  id="search" placeholder="search products .....">
     </div>
 
 
     <table class="table w-75 mx-auto my-4">
         <thead>
-            <th>ProductName</th>
-            <th>ProductPrice</th>
-            <th>ProductDesc</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Product Description</th>
             <th class="text-warning">Update</th>
             <th class="text-danger">Delete</th>
 
@@ -48,6 +52,7 @@
 
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
     <script src="js/main.js"></script>
 </body>

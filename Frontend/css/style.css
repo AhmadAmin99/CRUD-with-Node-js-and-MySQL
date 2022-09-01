@@ -1,7 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body
 {
     font-family: 'segoe ui light';
+    background-color:#222;
+    color: white;
 }
+
 #update{
     display: none;
 }
@@ -10,8 +17,63 @@ body
     display: none;
 }
 
+table{
+    text-align: center;
+    color: #fff !important;
+}
+
 
 th, label{
     font-weight: bold;
     font-size: 1.2rem;
 }
+
+input, textarea{
+    background-color: #111 !important;
+    color: white !important;
+}
+
+input:focus, textarea:focus{
+    background: #000 !important;
+    transform: scale(1.2);
+}
+
+button{
+    border-radius: 20px !important;
+    text-transform: uppercase !important;
+}
+
+
+.productForm{
+    box-shadow: 2px 3px 7px 1px rgba(0,0,0,0.5);
+    text-transform: uppercase;
+
+}
+
+thead{
+    text-transform: uppercase;
+
+}
+tbody{
+    font-size: 1.2em;
+}
+
+.ml6 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.3em;
+  }
+  
+  .ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
